@@ -34,11 +34,11 @@ config:
     port: 5432
     db: "retool-meta"
     user: "postgres"
-    password: "u6d7rFUcpxMv02qce56d"
+    # password:
     # passwordSecretName is the name of the secret where the pg password is stored (can be used instead of password)
-    # passwordSecretName:
+    passwordSecretName: "retool-postgresql"
     # passwordSecretKey is the key in the k8s secret, default: postgresql-password
-    # passwordSecretKey:
+    passwordSecretKey: "retool-postgresql-password"
 
 image:
   repository: "tryretool/backend"

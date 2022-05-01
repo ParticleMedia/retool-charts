@@ -94,13 +94,13 @@ ingress:
   # For k8s 1.18+
   # ingressClassName:
   labels: {}
-  annotations: {}
-  # kubernetes.io/ingress.class: nginx
+  annotations:
+  kubernetes.io/ingress.class: nginx-internal
   # kubernetes.io/tls-acme: "true"
   hosts:
-  # - host: retool.example.com
-  #   paths:
-  #     - path: /
+  - host: my-retool.k8s.nb-prod.com
+    paths:
+      - path: /
   tls:
   # - secretName: retool.example.com
   #   hosts:

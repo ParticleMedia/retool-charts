@@ -95,7 +95,7 @@ ingress:
   # ingressClassName:
   labels: {}
   annotations:
-  kubernetes.io/ingress.class: nginx-internal
+    kubernetes.io/ingress.class: nginx-internal
   # kubernetes.io/tls-acme: "true"
   hosts:
   - host: nb-retool.k8s.nb-prod.com

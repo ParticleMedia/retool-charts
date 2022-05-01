@@ -105,7 +105,7 @@ ingress:
   # - secretName: retool.example.com
   #   hosts:
   #     - retool.example.com
-  # servicePort: service-port
+  servicePort: 3000
   pathType: ImplementationSpecific
 
 postgresql:

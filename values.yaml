@@ -7,7 +7,7 @@ config:
   # licenseKeySecretName:
   # licenseKeySecretKey is the key in the k8s secret, default: license-key
   # licenseKeySecretKey:
-  useInsecureCookies: false
+  useInsecureCookies: true
   auth:
     google:
       clientId:
@@ -49,9 +49,7 @@ image:
 commandline:
   args: []
 
-env:
-  name: COOKIE_INSECURE
-  value: true
+env: {}
 
 # Optionally specify additional environment variables to be populated from Kubernetes secrets.
 # Useful for passing in SCIM_AUTH_TOKEN or other secret environment variables from Kubernetes secrets.
